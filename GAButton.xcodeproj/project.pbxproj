@@ -12,6 +12,7 @@
 		7F5843921AC64A640002FD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5843911AC64A640002FD4B /* Images.xcassets */; };
 		7F5843951AC64A640002FD4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5843931AC64A640002FD4B /* LaunchScreen.xib */; };
 		7F5843A11AC64A640002FD4B /* GAButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5843A01AC64A640002FD4B /* GAButtonTests.swift */; };
+		7FEE1CEB1AC6536C008415E1 /* GAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1CEA1AC6536C008415E1 /* GAButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		7F58439A1AC64A640002FD4B /* GAButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F58439F1AC64A640002FD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F5843A01AC64A640002FD4B /* GAButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAButtonTests.swift; sourceTree = "<group>"; };
+		7FEE1CEA1AC6536C008415E1 /* GAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				7F58438A1AC64A640002FD4B /* AppDelegate.swift */,
 				7F58438C1AC64A640002FD4B /* ViewController.swift */,
+				7FEE1CEA1AC6536C008415E1 /* GAButton.swift */,
 				7F5843911AC64A640002FD4B /* Images.xcassets */,
 				7F5843931AC64A640002FD4B /* LaunchScreen.xib */,
 				7F5843881AC64A640002FD4B /* Supporting Files */,
@@ -210,6 +213,7 @@
 			files = (
 				7F58438D1AC64A640002FD4B /* ViewController.swift in Sources */,
 				7F58438B1AC64A640002FD4B /* AppDelegate.swift in Sources */,
+				7FEE1CEB1AC6536C008415E1 /* GAButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +399,7 @@
 				7F5843A61AC64A640002FD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F5843A71AC64A640002FD4B /* Build configuration list for PBXNativeTarget "GAButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				7F5843A91AC64A640002FD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
