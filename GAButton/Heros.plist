@@ -13,5 +13,27 @@
 		<key>ThumbnailURL</key>
 		<string>http://nlcenters.org/wp-content/uploads/2014/07/Superman1.jpg</string>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Wonder Woman</string>
+		<key>Powers</key>
+		<array>
+			<string>Lasso of truth</string>
+			<string>Invisable Jet</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://img3.wikia.nocookie.net/__cb20051027200150/marvel_dc/images/f/f4/Wonder_Woman_DCAU_001.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Green Lantern</string>
+		<key>Powers</key>
+		<array>
+			<string>Green Ring</string>
+			<string>Green Eyes</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://static.comicvine.com/uploads/original/6/63698/1182216-green_lantern_hal_jordan.jpg</string>
+	</dict>
 </array>
 </plist>
