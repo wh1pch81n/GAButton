@@ -8,8 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainView : UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setUpView()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.setUpView()
+    }
+    
+    func setUpView() {
+        self.backgroundColor = UIColor.redColor()
+    }
+}
 
+class ViewController: UIViewController {
+    
+    override func loadView() {
+        super.loadView()
+        self.view = MainView(frame: UIScreen.mainScreen().bounds)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
