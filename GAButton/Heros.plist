@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Superman</string>
+		<key>Powers</key>
+		<array>
+			<string>Super Hearing</string>
+			<string>Super Speed</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://nlcenters.org/wp-content/uploads/2014/07/Superman1.jpg</string>
+	</dict>
+</array>
+</plist>

@@ -57,7 +57,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.  
         self.coldButton?.addTarget(self, action: "tappedButton:", forControlEvents: UIControlEvents.TouchUpInside)
         self.hotButton?.actionBlock = { (sender: GAButton) in
-            self.tappedGAButton(sender)
+            if let heroPlistPath = NSBundle.mainBundle().pathForResource("Heros", ofType: "plist") {
+                println(heroPlistPath)
+                if let heroPlistData = NSData(contentsOfFile: heroPlistPath) {
+                    if let heroRosterArray =  NSPropertyListSerialization.propertyListWithData(heroPlistData, options: NSPropertyListReadOptions(), format: nil, error: nil) as? Array<Dictionary<String, AnyObject>> {
+                        println(heroRosterArray)
+//                    if let heroRoster = NSDictionary(  as? Dictionary<String, AnyObject> {
+//                        println(heroRoster)
+//                    }
+                    }
+                }
+            }
         }
     }
 
