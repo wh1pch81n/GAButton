@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F58438B1AC64A640002FD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58438A1AC64A640002FD4B /* AppDelegate.swift */; };
+		7F58438D1AC64A640002FD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58438C1AC64A640002FD4B /* ViewController.swift */; };
+		7F5843901AC64A640002FD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F58438E1AC64A640002FD4B /* Main.storyboard */; };
+		7F5843921AC64A640002FD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5843911AC64A640002FD4B /* Images.xcassets */; };
+		7F5843951AC64A640002FD4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5843931AC64A640002FD4B /* LaunchScreen.xib */; };
+		7F5843A11AC64A640002FD4B /* GAButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5843A01AC64A640002FD4B /* GAButtonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F58439B1AC64A640002FD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F58437D1AC64A640002FD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5843841AC64A640002FD4B;
+			remoteInfo = GAButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F5843851AC64A640002FD4B /* GAButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5843891AC64A640002FD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F58438A1AC64A640002FD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F58438C1AC64A640002FD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F58438F1AC64A640002FD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F5843911AC64A640002FD4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F5843941AC64A640002FD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7F58439A1AC64A640002FD4B /* GAButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F58439F1AC64A640002FD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5843A01AC64A640002FD4B /* GAButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAButtonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F5843821AC64A640002FD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5843971AC64A640002FD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F58437C1AC64A640002FD4B = {
+			isa = PBXGroup;
+			children = (
+				7F5843871AC64A640002FD4B /* GAButton */,
+				7F58439D1AC64A640002FD4B /* GAButtonTests */,
+				7F5843861AC64A640002FD4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F5843861AC64A640002FD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F5843851AC64A640002FD4B /* GAButton.app */,
+				7F58439A1AC64A640002FD4B /* GAButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F5843871AC64A640002FD4B /* GAButton */ = {
+			isa = PBXGroup;
+			children = (
+				7F58438A1AC64A640002FD4B /* AppDelegate.swift */,
+				7F58438C1AC64A640002FD4B /* ViewController.swift */,
+				7F58438E1AC64A640002FD4B /* Main.storyboard */,
+				7F5843911AC64A640002FD4B /* Images.xcassets */,
+				7F5843931AC64A640002FD4B /* LaunchScreen.xib */,
+				7F5843881AC64A640002FD4B /* Supporting Files */,
+			);
+			path = GAButton;
+			sourceTree = "<group>";
+		};
+		7F5843881AC64A640002FD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F5843891AC64A640002FD4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F58439D1AC64A640002FD4B /* GAButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F5843A01AC64A640002FD4B /* GAButtonTests.swift */,
+				7F58439E1AC64A640002FD4B /* Supporting Files */,
+			);
+			path = GAButtonTests;
+			sourceTree = "<group>";
+		};
+		7F58439E1AC64A640002FD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F58439F1AC64A640002FD4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F5843841AC64A640002FD4B /* GAButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5843A41AC64A640002FD4B /* Build configuration list for PBXNativeTarget "GAButton" */;
+			buildPhases = (
+				7F5843811AC64A640002FD4B /* Sources */,
+				7F5843821AC64A640002FD4B /* Frameworks */,
+				7F5843831AC64A640002FD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAButton;
+			productName = GAButton;
+			productReference = 7F5843851AC64A640002FD4B /* GAButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F5843991AC64A640002FD4B /* GAButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5843A71AC64A640002FD4B /* Build configuration list for PBXNativeTarget "GAButtonTests" */;
+			buildPhases = (
+				7F5843961AC64A640002FD4B /* Sources */,
+				7F5843971AC64A640002FD4B /* Frameworks */,
+				7F5843981AC64A640002FD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F58439C1AC64A640002FD4B /* PBXTargetDependency */,
+			);
+			name = GAButtonTests;
+			productName = GAButtonTests;
+			productReference = 7F58439A1AC64A640002FD4B /* GAButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F58437D1AC64A640002FD4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Derrick  Ho";
+				TargetAttributes = {
+					7F5843841AC64A640002FD4B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7F5843991AC64A640002FD4B = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 7F5843841AC64A640002FD4B;
+					};
+				};
+			};
+			buildConfigurationList = 7F5843801AC64A640002FD4B /* Build configuration list for PBXProject "GAButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F58437C1AC64A640002FD4B;
+			productRefGroup = 7F5843861AC64A640002FD4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F5843841AC64A640002FD4B /* GAButton */,
+				7F5843991AC64A640002FD4B /* GAButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F5843831AC64A640002FD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5843901AC64A640002FD4B /* Main.storyboard in Resources */,
+				7F5843951AC64A640002FD4B /* LaunchScreen.xib in Resources */,
+				7F5843921AC64A640002FD4B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5843981AC64A640002FD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F5843811AC64A640002FD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F58438D1AC64A640002FD4B /* ViewController.swift in Sources */,
+				7F58438B1AC64A640002FD4B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5843961AC64A640002FD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5843A11AC64A640002FD4B /* GAButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F58439C1AC64A640002FD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5843841AC64A640002FD4B /* GAButton */;
+			targetProxy = 7F58439B1AC64A640002FD4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F58438E1AC64A640002FD4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F58438F1AC64A640002FD4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F5843931AC64A640002FD4B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F5843941AC64A640002FD4B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F5843A21AC64A640002FD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F5843A31AC64A640002FD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F5843A51AC64A640002FD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GAButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F5843A61AC64A640002FD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GAButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F5843A81AC64A640002FD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GAButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAButton.app/GAButton";
+			};
+			name = Debug;
+		};
+		7F5843A91AC64A640002FD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GAButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAButton.app/GAButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F5843801AC64A640002FD4B /* Build configuration list for PBXProject "GAButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5843A21AC64A640002FD4B /* Debug */,
+				7F5843A31AC64A640002FD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5843A41AC64A640002FD4B /* Build configuration list for PBXNativeTarget "GAButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5843A51AC64A640002FD4B /* Debug */,
+				7F5843A61AC64A640002FD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F5843A71AC64A640002FD4B /* Build configuration list for PBXNativeTarget "GAButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5843A81AC64A640002FD4B /* Debug */,
+				7F5843A91AC64A640002FD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F58437D1AC64A640002FD4B /* Project object */;
+}
