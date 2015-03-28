@@ -107,11 +107,12 @@ class ViewController: UIViewController, UITableViewDataSource {
         if let thumnailUrlPath = heroRosterArray[indexPath.row]["ThumbnailURL"] as? String {
             if let thumbnailUrl = NSURL(string: thumnailUrlPath) {
                 if let thumbnailData = NSData(contentsOfURL: thumbnailUrl) {
-                    cell.imageView?.image = UIImage(data: thumbnailData)
+                    if let thumbnailImage = UIImage(data: thumbnailData) {
+                        cell.imageView?.image = thumbnailImage
+                    }
                 }
             }
         }
-        
         return cell
     }
     
