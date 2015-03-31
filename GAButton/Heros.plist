@@ -35,5 +35,17 @@
 		<key>ThumbnailURL</key>
 		<string>http://static.comicvine.com/uploads/original/6/63698/1182216-green_lantern_hal_jordan.jpg</string>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>AquaMan</string>
+		<key>Powers</key>
+		<array>
+			<string>Talks to animals</string>
+			<string>Swim fast</string>
+			<string>Breath underwater</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://cdn.screenrant.com/wp-content/uploads/Aquaman-Jason-Mamoa-Full-Color.jpg</string>
+	</dict>
 </array>
 </plist>
