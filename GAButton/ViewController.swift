@@ -9,8 +9,9 @@
 import UIKit
 
 class MainView : UIView {
-    var coolButton:(UIButton)?
-    var hotButton:(GAButton)?
+    var coolButton:(UIButton)!
+    var hotButton:(GAButton)!
+    var tableView:(UITableView)!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,24 +26,27 @@ class MainView : UIView {
     func setUpView() {
         self.backgroundColor = UIColor.redColor()
         
-        var coolButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
-        coolButton.setTitle("What's Up?", forState: UIControlState.Normal)
-        coolButton.backgroundColor = UIColor.blueColor()
-        self.addSubview(coolButton)
-        self.coolButton = coolButton
+        self.coolButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
+        self.coolButton.setTitle("What's Up?", forState: UIControlState.Normal)
+        self.coolButton.backgroundColor = UIColor.blueColor()
+        self.addSubview(self.coolButton)
         
-        var hotButton = GAButton(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
+        self.hotButton = GAButton(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
         hotButton.center = self.center
         self.addSubview(hotButton)
-        self.hotButton = hotButton
+        
+        self.tableView = UITableView(frame: CGRect(x: 0, y: self.frame.size.height / 2, width: self.frame.size.width, height: self.frame.size.height / 2))
+        self.addSubview(self.tableView)
     }
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
     var mainView:(MainView?)
     var colorCount:(Int) = 0
-    var hotButton:(GAButton)?
-    var coldButton:(UIButton)?
+    var hotButton:(GAButton)!
+    var coldButton:(UIButton)!
+    var tableView:(UITableView)!
+    var heroRosterArray:(Array<Dictionary<String, AnyObject>>)! = []
     
     override func loadView() {
         super.loadView()
@@ -50,6 +54,8 @@ class ViewController: UIViewController {
         self.mainView = self.view as? MainView
         self.hotButton = (self.view as MainView).hotButton
         self.coldButton = (self.view as MainView).coolButton
+        self.tableView = (self.view as MainView).tableView
+        self.tableView.dataSource = self
     }
     
     override func viewDidLoad() {
@@ -57,7 +63,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.  
         self.coldButton?.addTarget(self, action: "tappedButton:", forControlEvents: UIControlEvents.TouchUpInside)
         self.hotButton?.actionBlock = { (sender: GAButton) in
-            self.tappedGAButton(sender)
+            if let heroPlistPath = NSBundle.mainBundle().pathForResource("Heros", ofType: "plist") {
+                //println(heroPlistPath)
+                if let heroPlistData = NSData(contentsOfFile: heroPlistPath) {
+                    if let heroRosterArray =  NSPropertyListSerialization.propertyListWithData(heroPlistData, options: NSPropertyListReadOptions(), format: nil, error: nil) as? Array<Dictionary<String, AnyObject>> {
+                        //println(heroRosterArray)
+                        self.heroRosterArray = heroRosterArray
+                        self.tableView.reloadData()
+                    }
+                }
+            }
         }
     }
 
@@ -82,6 +97,27 @@ class ViewController: UIViewController {
             self.mainView?.backgroundColor = UIColor.whiteColor()
         }
         colorCount++
+    }
+    
+    // MARK: UITableViewDataSource
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:(UITableViewCell) = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: nil)
+        cell.textLabel?.text = heroRosterArray[indexPath.row]["Name"] as? String ?? "MissingNo."
+        if let thumnailUrlPath = heroRosterArray[indexPath.row]["ThumbnailURL"] as? String {
+            if let thumbnailUrl = NSURL(string: thumnailUrlPath) {
+                if let thumbnailData = NSData(contentsOfURL: thumbnailUrl) {
+                    if let thumbnailImage = UIImage(data: thumbnailData) {
+                        cell.imageView?.image = thumbnailImage
+                    }
+                }
+            }
+        }
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.heroRosterArray.count
     }
 }
 

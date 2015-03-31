@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Superman</string>
+		<key>Powers</key>
+		<array>
+			<string>Super Hearing</string>
+			<string>Super Speed</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://nlcenters.org/wp-content/uploads/2014/07/Superman1.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Wonder Woman</string>
+		<key>Powers</key>
+		<array>
+			<string>Lasso of truth</string>
+			<string>Invisable Jet</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://img3.wikia.nocookie.net/__cb20051027200150/marvel_dc/images/f/f4/Wonder_Woman_DCAU_001.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Green Lantern</string>
+		<key>Powers</key>
+		<array>
+			<string>Green Ring</string>
+			<string>Green Eyes</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://static.comicvine.com/uploads/original/6/63698/1182216-green_lantern_hal_jordan.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>AquaMan</string>
+		<key>Powers</key>
+		<array>
+			<string>Talks to animals</string>
+			<string>Swim fast</string>
+			<string>Breath underwater</string>
+		</array>
+		<key>ThumbnailURL</key>
+		<string>http://cdn.screenrant.com/wp-content/uploads/Aquaman-Jason-Mamoa-Full-Color.jpg</string>
+	</dict>
+</array>
+</plist>
